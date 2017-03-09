@@ -4,7 +4,12 @@ services:
   - docker
 
 before_script:
-  - make build
+  - make image
 
 script:
   - make test
+
+deploy:
+  script: make release TAG=$TRAVIS_TAG
+  on:
+    tags: true
