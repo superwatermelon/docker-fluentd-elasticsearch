@@ -1,5 +1,7 @@
 # docker-fluentd-elasticsearch
 
+![Build on Travis CI](https://travis-ci.org/superwatermelon/docker-fluentd-elasticsearch.svg?branch=master)
+
 Docker image for running [Fluentd](fluentd) with
 [Elasticsearch plugin](fluentd-elasticsearch).
 
