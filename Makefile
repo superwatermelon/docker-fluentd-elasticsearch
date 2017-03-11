@@ -16,7 +16,7 @@ test:
 release:
 	docker build --tag $(IMAGE_NAME):$(tag) .
 	docker tag $(IMAGE_NAME):$(tag) $(IMAGE_NAME):latest
-	docker login --username $(DOCKER_USERNAME) --password $(DOCKER_PASSWORD)
+	scripts/docker-login
 	docker push $(IMAGE_NAME):$(tag)
 	docker push $(IMAGE_NAME):latest
 
