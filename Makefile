@@ -20,4 +20,4 @@ release:
 	docker push $(IMAGE_NAME):$(tag)
 	docker push $(IMAGE_NAME):latest
 
-.PHONY: test
+.PHONY: image test release
